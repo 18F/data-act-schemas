@@ -1,0 +1,154 @@
+message AccountingEntry {
+    optional string fiscalYear = 1;
+    optional string period = 2;
+    repeated USSGLEntry USSGLEntryHeader = 3;
+}
+
+message USSGLEntry {
+    repeated TreasuryAccountSymbol treasuryAccountSymbol = 1;
+    repeated USSGLEntryDetail ussglEntryDetail = 2;
+}
+
+message TreasuryAccountSymbol {
+    repeated string allocationTransferId = 1;
+    optional string agencyId = 2;
+    repeated string beginningPOA = 3;
+    repeated string endPOA = 4;
+    optional string availableTypeCode = 5;
+    optional string mainAccount = 6;
+    repeated string subAccount = 7;
+
+    enum BEACategoryCode {
+        D = 1;
+        G = 2;
+        M = 3;
+        N = 4;
+        S = 5;
+    };
+
+    repeated BEACategoryCode beaCategoryCode = 8;
+    repeated string budgetAgency = 9;
+    repeated string budgetBureau = 10;
+    repeated string budgetSubFunction = 11;
+}
+
+message USSGLEntryDetail {
+    repeated string ussglAccount = 1;
+    repeated Amount amount = 2;
+    optional DebitCreditCode debitCreditCode = 3;
+    optional BeginningEndIndicator beginningEndIndicator = 4;
+    optional AuthorityType authorityType = 5;
+    optional ReimbursableFlag reimbursableFlag = 6;
+    optional ApportionmentCategoryCode apportionmentCategoryCode = 7;
+    optional string apportionmentCategoryBProgramCode = 8;
+    optional string programReportCategoryNumber = 9;
+    optional FederalNonFederalIndicator federalNonFederalIndicator = 10;
+    optional string TradingPartnerAgencyIdentifer = 11;
+    optional string TradingPartnerAgencyAccountCode = 12;
+    optional YearOfBudgetAuthorityCode yearOfBudgetAuthorityCode = 13;
+    optional AvailabilityTimeIndicator availabilityTimeIndicator = 14;
+    required BEACategoryIndicator beaCategoryIndicator = 15;
+    required BorrowingSource borrowingSource = 16;
+    required ExchangeNonExchangeIndicator exchangeNonExchangeIndicator = 17;
+    required CustodialNonCustodialIndicator custodialNonCustodialIndicator = 18;
+    required string budgetaryImpact = 19;
+    required PriorYearAdjustmentCode priorYearAdjustmentCode = 20;
+    required string creditCohortYear = 21;
+    required ProgramIndicator programIndicator = 22;
+    required ReductionType reductionType = 23;
+
+    enum DebitCreditCode {
+        DEBIT = 1;
+        CREDIT = 2;
+        UNDEFINED = 3;
+    }
+
+    enum BeginningEndIndicator {
+        BEGINNING = 1; // Beginning
+        ENDING = 2; // Ending
+    }
+
+    enum AuthorityType {
+        BORROWING_AUTHORITY = 1;
+        CONTRACT_AUTHORITY = 2;
+        ADVANCE_APPROPRIATION = 3;
+        APPROPRIATION_PRIOR_YEAR = 4;
+        APPROPRIATION_SUBSEQUENT_YEAR = 5;
+        APPROPRIATION_NON_ADVANCE = 6;
+        REAPPROPRIATION = 7;
+        SPENDING_AUTHORITY_OFFSETTING_COLLECTIONS = 8;
+    }
+
+    enum ReimbursableFlag {
+        DIRECT = 1;
+        REIMBURSABLE = 2;
+    }
+
+    enum ApportionmentCategoryCode {
+        QUARTERLY_APPORTIONMENTS = 1;
+        NON_QUARTERLY_APPORTIONMENTS = 2;
+        EXEMPT_FROM_APPORTIONMENT = 3;
+    }
+
+    enum FederalNonFederalIndicator {
+        NON_FEDERAL_EXCEPTION = 1;
+        FEDERAL = 2;
+        GENERAL_FUND = 3;
+        NON_FEDERAL = 4;
+        NON_RECIPROCATING_FEDERAL_ACTIVITY = 5;
+    }
+
+    enum YearOfBudgetAuthorityCode {
+        BAL = 1;
+        NEW = 2;
+    }
+
+    enum AvailabilityTimeIndicator {
+        AVAILABLE_CURRENT_PERIOD = 1;
+        AVAIALABE_SUBSEQUENT_PERIOD = 2;
+    }
+    enum BEACategoryIndicator {
+        DISCRETIONARY = 1;
+        MANDATORY = 2;
+    }
+
+    enum BorrowingSource {
+        FEDERAL_FINANCING_BANK = 1;
+        PUBLIC = 2;
+        TREASURY = 3;
+    }
+
+    enum ExchangeNonExchangeIndicator {
+        EXCHANGE_WITHOUT_ASSOCIATED_COSTS = 1;
+        NON_EXCHANGE = 2;
+        EXCHANGE = 3;
+    }
+
+    enum CustodialNonCustodialIndicator {
+        NON_CUSTODIAL = 1;
+        CUSTODIAL = 2;
+    }
+
+    enum PriorYearAdjustmentCode {
+        BACKDATED_ADJUSTEMENT = 1;
+        NON_BACKDATED_ADJUSTMENT = 2;
+        NOT_AN_ADJUSTMENT = 3;
+    }
+
+    enum ProgramIndicator {
+        ASSIGNED_TO_PROGRAMS = 1;
+        NOT_ASSIGNED_TO_PROGRAMS = 2;
+    }
+
+    enum ReductionType {
+        ATB = 1; // Across The Board reduction
+        OTR = 2; // Reductions other than ATB and SEQ
+        SEQ = 3; // Sequestration
+        XXX = 4; // N.A.
+    }
+}
+
+message Amount {
+    required float amount = 1;
+    optional string unit = 2;
+}

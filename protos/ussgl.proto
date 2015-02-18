@@ -1,0 +1,144 @@
+message AgencyData {
+    optional string identifier = 1;
+    required string fiscalYear = 2;
+    required string period = 3;
+    optional string accountNumber = 4;
+    optional string allocationTransferId = 5;
+    required string agencyID = 6;
+    optional string beginningPOA = 7;
+    optional string endPOA = 8;
+    optional string availableTypeCode = 9;
+    required string mainAccount = 10;
+    required string subAccount = 11;
+    optional BEACategoryCode beaCategoryCode = 12;
+    required string budgetAgency = 13;
+    optional string budgetBureau = 14;
+    optional string budgetSubfunction = 15;
+    optional string USSGLAccountNumber = 16;
+    optional Amount amount = 17;
+    optional DebitCreditCode debitCreditCode = 18;
+    required BeginningEndIndicator beginningEndIndicator = 19;
+    required AuthorityType authorityType = 20;
+    required ReimbursableFlag reimburableFlag = 21;
+    required ApportionmentCategoryCode apportionmentCategoryCode = 22;
+    required string apportionmenCategoryBProgramCode = 23;
+    required string programReportCategoryNumber = 24;
+    required FederalNonFederalIndicator federalNonFederalIndicator = 25;
+    optional string tradingPartnerAgencyID = 26;
+    optional string tradingPartnerMainAccountCode = 27;
+    required YearOfBudgetAuthorityCode yearOfBudgetAuthorityCode = 28;
+    required AvailabilityTimeIndicator availabilityTimeIndicator = 29;
+    required BEACategoryIndicator beaCategoryIndicator = 30;
+    required BorrowingSource borrowingSource = 31;
+    required ExchangeNonExchangeIndicator exchangeNonExchangeIndicator = 32;
+    required CustodialNonCustodialIndicator custodialNonCustodialIndicator = 33;
+    required string budgetaryImpact = 34;
+    required PriorYearAdjustmentCode priorYearAdjustmentCode = 35;
+    required string creditCohortYear = 36;
+    required ProgramIndicator programIndicator = 37;
+    required ReductionType reductionType = 38;
+}
+
+enum BEACategoryCode {
+    D = 1;
+    G = 2;
+    M = 3;
+    N = 4;
+    S = 5;
+}
+
+message Amount {
+    required float amount = 1;
+    optional string unit = 2;
+}
+
+enum DebitCreditCode {
+    DEBIT = 1;
+    CREDIT = 2;
+    UNDEFINED = 3;
+}
+
+enum BeginningEndIndicator {
+    BEGINNING = 1; // Beginning
+    ENDING = 2; // Ending
+}
+
+enum AuthorityType {
+    BORROWING_AUTHORITY = 1;
+    CONTRACT_AUTHORITY = 2;
+    ADVANCE_APPROPRIATION = 3;
+    APPROPRIATION_PRIOR_YEAR = 4;
+    APPROPRIATION_SUBSEQUENT_YEAR = 5;
+    APPROPRIATION_NON_ADVANCE = 6;
+    REAPPROPRIATION = 7;
+    SPENDING_AUTHORITY_OFFSETTING_COLLECTIONS = 8;
+}
+
+enum ReimbursableFlag {
+    DIRECT = 1;
+    REIMBURSABLE = 2;
+}
+
+enum ApportionmentCategoryCode {
+    QUARTERLY_APPORTIONMENTS = 1;
+    NON_QUARTERLY_APPORTIONMENTS = 2;
+    EXEMPT_FROM_APPORTIONMENT = 3;
+}
+
+enum FederalNonFederalIndicator {
+    NON_FEDERAL_EXCEPTION = 1;
+    FEDERAL = 2;
+    GENERAL_FUND = 3;
+    NON_FEDERAL = 4;
+    NON_RECIPROCATING_FEDERAL_ACTIVITY = 5;
+}
+
+enum YearOfBudgetAuthorityCode {
+    BAL = 1;
+    NEW = 2;
+}
+
+enum AvailabilityTimeIndicator {
+    AVAILABLE_CURRENT_PERIOD = 1;
+    AVAIALABE_SUBSEQUENT_PERIOD = 2;
+}
+
+enum BEACategoryIndicator {
+    DISCRETIONARY = 1;
+    MANDATORY = 2;
+}
+
+enum BorrowingSource {
+    FEDERAL_FINANCING_BANK = 1;
+    PUBLIC = 2;
+    TREASURY = 3;
+}
+
+enum ExchangeNonExchangeIndicator {
+    EXCHANGE_WITHOUT_ASSOCIATED_COSTS = 1;
+    NON_EXCHANGE = 2;
+    EXCHANGE = 3;
+}
+
+enum CustodialNonCustodialIndicator {
+    NON_CUSTODIAL = 1;
+    CUSTODIAL = 2;
+}
+
+enum PriorYearAdjustmentCode {
+    BACKDATED_ADJUSTEMENT = 1;
+    NON_BACKDATED_ADJUSTMENT = 2;
+    NOT_AN_ADJUSTMENT = 3;
+}
+
+enum ProgramIndicator {
+    ASSIGNED_TO_PROGRAMS = 1;
+    NOT_ASSIGNED_TO_PROGRAMS = 2;
+}
+
+enum ReductionType {
+    ATB = 1;
+    OTR = 2;
+    SEQ = 3;
+    XXX = 4;
+}
