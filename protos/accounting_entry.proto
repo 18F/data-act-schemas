@@ -43,8 +43,8 @@ message USSGLEntryDetail {
     optional string apportionmentCategoryBProgramCode = 8;
     optional string programReportCategoryNumber = 9;
     optional FederalNonFederalIndicator federalNonFederalIndicator = 10;
-    optional string TradingPartnerAgencyIdentifer = 11;
-    optional string TradingPartnerAgencyAccountCode = 12;
+    optional string tradingPartnerAgencyIdentifer = 11;
+    optional string tradingPartnerAgencyAccountCode = 12;
     optional YearOfBudgetAuthorityCode yearOfBudgetAuthorityCode = 13;
     optional AvailabilityTimeIndicator availabilityTimeIndicator = 14;
     required BEACategoryIndicator beaCategoryIndicator = 15;
