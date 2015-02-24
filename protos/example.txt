@@ -24,3 +24,258 @@ USSGLEntryHeader {
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 856.42
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: BEGINNING
+    federalNonFederalIndicator: FEDERAL
+    tradingPartnerAgencyIdentifer: "70"
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 7272.57
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: BEGINNING
+    federalNonFederalIndicator: FEDERAL
+    tradingPartnerAgencyIdentifer: "999"
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 3065108.67
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: BEGINNING
+    federalNonFederalIndicator: NON_FEDERAL
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 94.66
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: ENDING
+    federalNonFederalIndicator: FEDERAL
+    tradingPartnerAgencyIdentifer: "14"
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 614.08
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: ENDING
+    federalNonFederalIndicator: FEDERAL
+    tradingPartnerAgencyIdentifer: "24"
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 5622.79
+      unit: "USD"
+    }
+    debitCreditCode: DEBIT
+    beginningEndIndicator: ENDING
+    federalNonFederalIndicator: FEDERAL
+    tradingPartnerAgencyIdentifer: "47"
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "211000"
+    amount {
+      amount: 3803006.35
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: ENDING
+    federalNonFederalIndicator: NON_FEDERAL
+    custodialNonCustodialIndicator: NON_CUSTODIAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "212000"
+    amount {
+      amount: 2415366.65
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: BEGINNING
+    federalNonFederalIndicator: NON_FEDERAL
+  }
+}
+
+
+
+fiscalYear: "2014"
+period: "6"
+USSGLEntryHeader {
+  treasuryAccountSymbol {
+    agencyId: "12"
+    availableTypeCode: "X"
+    mainAccount: "1105"
+    subAccount: "0"
+    beaCategoryCode: D
+    budgetAgency: "5"
+    budgetBureau: "96"
+    budgetSubFunction: "302"
+  }
+  ussglEntryDetail {
+    ussglAccount: "212000"
+    amount {
+      amount: 887012.64
+      unit: "USD"
+    }
+    debitCreditCode: CREDIT
+    beginningEndIndicator: ENDING
+    federalNonFederalIndicator: NON_FEDERAL
+  }
+}
