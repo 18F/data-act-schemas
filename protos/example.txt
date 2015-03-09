@@ -12,7 +12,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 3459.79
       unit: "USD"
@@ -20,7 +22,7 @@ USSGLEntryHeader {
     debitCreditCode: CREDIT
     beginningEndIndicator: BEGINNING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "47"
+    tradingPartnerAgencyIdentifier: "47"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -41,7 +43,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 856.42
       unit: "USD"
@@ -49,7 +53,7 @@ USSGLEntryHeader {
     debitCreditCode: CREDIT
     beginningEndIndicator: BEGINNING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "70"
+    tradingPartnerAgencyIdentifier: "70"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -70,7 +74,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 7272.57
       unit: "USD"
@@ -78,7 +84,7 @@ USSGLEntryHeader {
     debitCreditCode: CREDIT
     beginningEndIndicator: BEGINNING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "999"
+    tradingPartnerAgencyIdentifier: "999"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -99,7 +105,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 3065108.67
       unit: "USD"
@@ -127,7 +135,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 94.66
       unit: "USD"
@@ -135,7 +145,7 @@ USSGLEntryHeader {
     debitCreditCode: CREDIT
     beginningEndIndicator: ENDING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "14"
+    tradingPartnerAgencyIdentifier: "14"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -156,7 +166,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 614.08
       unit: "USD"
@@ -164,7 +176,7 @@ USSGLEntryHeader {
     debitCreditCode: CREDIT
     beginningEndIndicator: ENDING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "24"
+    tradingPartnerAgencyIdentifier: "24"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -185,7 +197,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 5622.79
       unit: "USD"
@@ -193,7 +207,7 @@ USSGLEntryHeader {
     debitCreditCode: DEBIT
     beginningEndIndicator: ENDING
     federalNonFederalIndicator: FEDERAL
-    tradingPartnerAgencyIdentifer: "47"
+    tradingPartnerAgencyIdentifier: "47"
     custodialNonCustodialIndicator: NON_CUSTODIAL
   }
 }
@@ -214,7 +228,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "211000"
+    ussglAccount {
+      ussglAccountNumber: "211000"
+    }
     amount {
       amount: 3803006.35
       unit: "USD"
@@ -242,7 +258,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "212000"
+    ussglAccount {
+      ussglAccountNumber: "212000"
+    }
     amount {
       amount: 2415366.65
       unit: "USD"
@@ -269,7 +287,9 @@ USSGLEntryHeader {
     budgetSubFunction: "302"
   }
   ussglEntryDetail {
-    ussglAccount: "212000"
+    ussglAccount {
+      ussglAccountNumber: "212000"
+    }
     amount {
       amount: 887012.64
       unit: "USD"

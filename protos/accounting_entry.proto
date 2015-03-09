@@ -43,7 +43,7 @@ message USSGLEntryDetail {
     optional string apportionmentCategoryBProgramCode = 8;
     optional string programReportCategoryNumber = 9;
     optional FederalNonFederalIndicator federalNonFederalIndicator = 10;
-    optional string tradingPartnerAgencyIdentifer = 11;
+    optional string tradingPartnerAgencyIdentifier = 11;
     optional string tradingPartnerAgencyAccountCode = 12;
     optional YearOfBudgetAuthorityCode yearOfBudgetAuthorityCode = 13;
     optional AvailabilityTimeIndicator availabilityTimeIndicator = 14;
@@ -56,6 +56,12 @@ message USSGLEntryDetail {
     required string creditCohortYear = 21;
     required ProgramIndicator programIndicator = 22;
     required ReductionType reductionType = 23;
+
+    message USSGLAccount {
+        optional string ussglAccountNumber = 1;
+        optional string objectClass = 2;
+        optional string awardNumber = 3;
+    }
 
     enum DebitCreditCode {
         DEBIT = 1;
