@@ -33,7 +33,7 @@ message TreasuryAccountSymbol {
 }
 
 message USSGLEntryDetail {
-    repeated string ussglAccount = 1;
+    repeated USSGLAccount ussglAccount = 1;
     repeated Amount amount = 2;
     optional DebitCreditCode debitCreditCode = 3;
     optional BeginningEndIndicator beginningEndIndicator = 4;
