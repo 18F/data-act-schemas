@@ -1,0 +1,117 @@
+message ID {
+    optional string id = 1;
+}
+
+ message TreasuryAccountSymbol {
+    optional string id = 1;
+    optional string subLevelPrefix = 2;
+    optional string allocationTransferAgencyId = 3;
+    optional string beginningPeriodOfAvailability = 4;
+    optional string endingPeriodOfAvailability = 5;
+    optional string availabilityTypeCode = 6;
+    optional string mainAccount = 7;
+    optional string subaccount = 8;
+    optional string asOfTime = 9; // How do we want to model time? Epoch?
+    repeated ID transactions = 7;
+    optional ID accounts = 8;
+}
+
+message Account {
+    optional string id =1;
+    optional Amount budgetAuthorityAppropriated = 2;
+    optional Amount obligatedAmount = 3;
+    optional Amount unobligatedAmount = 4;
+    optional Amount otherBudgetaryResources = 5; // Is this just amount or amount + metadata?
+    optional ID federalAgency = 6; // Redundant?
+}
+
+message Amount {
+    optional float amount = 1;
+    optional string currency = 2;
+}
+
+message AgencyTransaction {
+    optional string id = 1;
+    optional string objectClass = 2;
+    optional TODO outlays = 3;
+    optional ID actionId = 4;
+}
+
+message Action {
+    optional string id = 1;
+    optional string recordType = 2;
+    optional string typeOfAction = 3;
+    optional int32 modificationAmendmentNumber = 4; // Yes?
+    optional ID awardId = 5;
+}
+
+message Award {
+    optional string id = 1;
+    optional string awardDescription = 2;
+    optional int32 awardNumber = 3; // Yes?
+    optional ID fundingAgency = 4;
+    optional ID awardingAgency = 5;
+    optional ID parentAward = 6;
+    optional Amount fundingActionObligation = 7;
+    optional Amount currentTotalValue = 8;
+    optional Amount potentialTotalValue = 9;
+    optional Amount currentTotalFundingObligationAmount = 10;
+    optional Amount nonFederalFundingAmount = 11;
+    optional string actionDate = 12;
+    optional string periodOfPerformanceStart = 13;
+    optional string periodOfPerformanceCurrentEnd = 14;
+    optional string periodOfPerformancePotentialEnd = 15;
+    optional string orderingPeriodEndDate = 16;
+    repeated PlaceOfPerformance placeOfPerformance = 17;
+    repeated ID awardee = 18;
+}
+
+message Agency {
+    optional string id = 1;
+    optional string agencyName = 2;
+    optional string agencyCode = 3;
+    optional string subTierAgencyName = 4;
+    optional string subTierAgencyCode = 5;
+    optional string officeName = 6; // Office is only used for awarding agency. Should that field be routed through an Office message?
+    optional string officeCode = 7;
+}
+
+message PlaceOfPerformance {
+    optional string id = 1;
+    optional string placeOfPerformanceCity = 2;
+    optional string placeOfPerformanceState = 3;
+    optional string placeOfPerformanceZip = 4;
+    optional string placeOfPerformanceCountryCode = 5;
+    optional string placeOfPerformanceCountryName = 6;
+    optional string placeOfPerformanceCongressionalDistrict = 7;
+}
+
+message Awardee {
+    optional id = 1;
+    optional string businessType = 2;
+    optional string DUNSNumber = 3; // string? or int32?
+    optional string DUNSPlusFour = 4; // string? or int32?
+    optional string businessName = 5;
+    optional string parentDUNSNumber = 6;
+    optional string parentBusinessName = 7;
+    optional Address businessAddress = 8;
+    optional string businessCongressionalDistrict = 9;
+    repeated HighlyCompensatedOfficer highlyCompensatedOfficer = 10;
+}
+
+message Address {
+    optional string street1 = 1;
+    optional string street2 = 2;
+    optional string street3 = 3;
+    optional string city = 4;
+    optional string countryName = 5;
+    optional string countryCode = 6;
+    optional string postalCode = 7;
+    optional string USZipCodePlusFour = 8;
+}
+
+message HighlyCompensatedOfficer {
+    optional string firstName = 1;
+    optional string lastName = 2;
+    optional Amount totalCompensation = 3;
+}
