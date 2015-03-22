@@ -12,8 +12,8 @@ message ID {
     optional string mainAccount = 7;
     optional string subaccount = 8;
     optional string asOfTime = 9; // How do we want to model time? Epoch?
-    repeated ID transactions = 7;
-    optional ID accounts = 8;
+    repeated ID transactions = 10;
+    optional ID accounts = 11;
 }
 
 message Account {
@@ -33,7 +33,7 @@ message Amount {
 message AgencyTransaction {
     optional string id = 1;
     optional string objectClass = 2;
-    optional TODO outlays = 3;
+    optional Amount outlays = 3; //was marked as TODO, changing to Amount so it compiles.
     optional ID actionId = 4;
 }
 
@@ -87,7 +87,7 @@ message PlaceOfPerformance {
 }
 
 message Awardee {
-    optional id = 1;
+    optional string id = 1;
     optional string businessType = 2;
     optional string DUNSNumber = 3; // string? or int32?
     optional string DUNSPlusFour = 4; // string? or int32?
