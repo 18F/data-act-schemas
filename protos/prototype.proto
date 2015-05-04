@@ -63,7 +63,7 @@ message Award {
     optional string periodOfPerformancePotentialEnd = 15;
     optional string orderingPeriodEndDate = 16;
     repeated PlaceOfPerformance placeOfPerformance = 17;
-    repeated ID awardee = 18;
+    repeated Awardee awardee = 18;
 }
 
 message Agency {
